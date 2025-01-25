@@ -1,0 +1,165 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: #8B0000;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #600000;
+    padding: 10px 0;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px;
+}
+nav a:hover {
+    background-color: #8B0000;
+    border-radius: 5px;
+}
+
+/* About Section */
+.about {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+.about h2 {
+    font-size: 2rem;
+}
+.about p {
+    margin: 10px auto;
+    max-width: 600px;
+}
+
+/* Gallery Styles */
+.gallery {
+    text-align: center;
+    padding: 20px;
+}
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.gallery-container img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #600000;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+footer a {
+    color: #FFD700;
+    text-decoration: none;
+    margin: 0 10px;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+/*transition*/
+/* General Transition for Links */
+nav a, footer a {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover Effects for Navigation Links */
+nav a:hover {
+    background-color: #8B0000;
+    color: #FFD700; /* Changes text color on hover */
+}
+
+/* Gallery Image Transition */
+.gallery-container img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.gallery-container img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+/* Button-Like Links in Footer */
+footer a {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid #FFD700;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+footer a:hover {
+    background-color: #FFD700;
+    color: #600000;
+}
+
+/* Smooth Scroll for Anchor Links */
+html {
+    scroll-behavior: smooth;
+}
+/*frame*/
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+}
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.fade-in-active {
+    animation: fadeIn 1s ease forwards;
+}
+/*font change*/
+/* Add styles for the heading and subheading */
+.logo {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    color: hwb(0 1% 99% / 0.775);
+    text-align: center;
+    margin: 0;
+}
+
+.tagline {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: rgb(205, 205, 140);
+    text-align: center;
+    margin-top: 0.5rem;
+}
