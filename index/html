@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Wajeeha Calligraphy - Arabic Calligraphy and Art">
+        <title>Wajeeha Calligraphy</title>
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Link to Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1 class="logo">Wajeeha Calligraphy</h1>
+            <p class="tagline">Elegance in Every Stroke</p>
+        </header>
+        <!-- Rest of the content -->
+   
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>Welcome to Wajeeha Calligraphy, where traditional Arabic art meets modern elegance. I create bespoke designs inspired by heritage and crafted with passion.</p>
+    </section>
+    <section id="gallery" class="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-container">
+            <img src="images/calligraphy1.jpg" alt="Beautiful Arabic Calligraphy">
+            <img src="images/calligraphy2.jpg" alt="Arabic Calligraphy Artwork">
+            <img src="images/calligraphy3.jpg" alt="Modern Calligraphy Design">
+            <img src="images/calligraphy4.jpg" alt="Elegant Calligraphy Piece">
+            <img src="images/calligraphy5.jpg" alt="Modern Calligraphy Design">
+            <img src="images/calligraphy6.jpg" alt="Elegant Calligraphy Piece">
+            <img src="images/calligraphy7.jpg" alt="Modern Calligraphy Design">
+            <img src="images/calligraphy8.jpg" alt="Elegant Calligraphy Piece">
+        </div>
+    </section>
+    <footer>
+        <p>Connect with me:</p>
+        <a href="mailto:wajeehasamreen21@gmail.com">Email</a> |
+        <a href="https://instagram.com">Instagram</a> |
+        <a href="https://facebook.com">Facebook</a>
+        <p>&copy; 2025 Wajeeha Calligraphy. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
+
+<section id="about" class="about fade-in">
+   
+</section>
+
+ <script>
+        function convertToCalligraphy() {
+            var text = document.getElementById('textInput').value;  // Get the input text
+            var outputDiv = document.getElementById('output');
+            
+            // If the input text is not empty, show it in the calligraphy style
+            if (text.trim() !== "") {
+                outputDiv.textContent = text;
+                outputDiv.style.display = "block";  // Make sure the output is visible
+            } else {
+                outputDiv.textContent = "Please enter some text to convert!";
+                outputDiv.style.display = "block";  // Ensure the message is visible
+            }
+        }
+    </script>
+</body>
+</html>
